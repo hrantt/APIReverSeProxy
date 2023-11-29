@@ -22,12 +22,12 @@
 
 3. **Navigate to Project Directory:**
    ```bash
-   cd APIReverseProxy
+   cd APIReverseProxy/APIReverseProxy
    ```
 
 4. **Build the Project:**
    ```bash
-   dotnet build
+   dotnet build APIReverseProxy.csproj
    ```
 
 5. **Run the Application:**
