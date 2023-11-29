@@ -13,7 +13,7 @@ namespace APIReverseProxy
             _ = app.UseEndpoints(endpoints =>
             {
                 _ = endpoints.MapPost("/v1", HandlePostRequest);
-                
+
             });
         }
 
@@ -53,7 +53,7 @@ namespace APIReverseProxy
 
             Task<string> infuraRequest = MakeHttpClientPostRequestAsync("https://mainnet.infura.io/v3/" + InfuraApiKey, newRequest.ToString());
             Task<string> alchemyRequest = MakeHttpClientPostRequestAsync("https://eth-mainnet.g.alchemy.com/v2/" + AlchemyApiKey, newRequest.ToString());
-            
+
             apiTasks.Add(infuraRequest);
             apiTasks.Add(alchemyRequest);
 
