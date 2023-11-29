@@ -35,7 +35,6 @@ namespace APIReverseProxy
                     await context.Response.CompleteAsync();
                     return;
                 }
-                Console.Write("DA FUCK AM I DOING HERE! LET ME OUT!");
                 // Make HTTP requests to multiple API endpoints
                 await ProcessApiRequests(context, newRequest);
             }
