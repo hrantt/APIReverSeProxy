@@ -40,8 +40,7 @@ namespace APIReverseProxy
             catch (Exception ex)
             {
                 // Log the exception or handle it as needed
-                context.Response.StatusCode = StatusCodes.Status500InternalServerError;
-                await context.Response.WriteAsync($"Error: {ex.Message}");
+                Console.Error.Write($"Error! {ex.Message}");
             }
         }
 
