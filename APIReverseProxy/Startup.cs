@@ -13,6 +13,7 @@ namespace APIReverseProxy
             _ = app.UseEndpoints(endpoints =>
             {
                 _ = endpoints.MapPost("/v1", HandlePostRequest);
+                
             });
         }
 
@@ -23,14 +24,12 @@ namespace APIReverseProxy
                 // Read the incoming POST request body
                 using StreamReader reader = new(context.Request.Body);
                 string requestBody = await reader.ReadToEndAsync();
-                Console.Write(requestBody);
 
                 // Validate the JSON-RPC request
                 JObject newRequest = ValidateRpcRequest(requestBody);
 
                 if (newRequest["error"] != null)
                 {
-                    Console.Write(newRequest);
                     await context.Response.WriteAsync(newRequest.ToString(Newtonsoft.Json.Formatting.None));
                     await context.Response.CompleteAsync();
                     return;
