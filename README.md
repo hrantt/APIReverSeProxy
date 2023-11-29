@@ -43,7 +43,7 @@
 
 Sending a POST request using `curl`:
 ```bash
-curl http://3.72.8.51:5000/v1/   -X POST   -H "Content-Type: application/json"   -d '{"jsofdsnrpc":"2.0","method":"eth_gasPrice","parafdsms": [],"id":1}'
+curl http://3.72.8.51:5000/v1/   -X POST   -H "Content-Type: application/json"   -d '{"jsonrpc":"2.0","method":"eth_gasPrice","params": [],"id":1}'
 ```
 
 By default when you deploy it will use `http://localhost:5000`
