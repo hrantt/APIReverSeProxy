@@ -1,7 +1,3 @@
-Certainly! Here's an expanded "Installation and Setup" section with more detailed steps on how to build and run the project:
-
----
-
 ## Installation and Setup
 
 ### Prerequisites
