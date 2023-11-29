@@ -47,8 +47,8 @@ Certainly! Here's an expanded "Installation and Setup" section with more detaile
 
 Sending a POST request using `curl`:
 ```bash
-curl http://localhost:5000/v1/   -X POST   -H "Content-Type: application/json"   -d '{"jsofdsnrpc":"2.0","method":"eth_gasPrice","parafdsms": [],"id":1}'
+curl http://3.72.8.51:5000/v1/   -X POST   -H "Content-Type: application/json"   -d '{"jsofdsnrpc":"2.0","method":"eth_gasPrice","parafdsms": [],"id":1}'
 ```
 
-Ensure to replace `http://localhost:5000` with the appropriate URL and port where the application is running.
+By default when you deploy it will use `http://localhost:5000`
 
